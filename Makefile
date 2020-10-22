@@ -16,7 +16,7 @@ push-latest:
 	docker push $(IMAGE):$(LATEST)
 
 gen-version:
-	echo "1.0" > VERSION
+	echo "1.1" > VERSION
 
 tag-version:
 	docker tag $(IMAGE):$(LATEST) $(IMAGE):$(shell cat VERSION)
